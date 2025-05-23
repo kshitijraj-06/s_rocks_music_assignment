@@ -64,16 +64,6 @@ flutter pub get
 flutter run
 ```
 
----
-
-## 📸 Preview
-
-| Home Screen            | Card Navigation        | Bottom Bar             |
-| ---------------------- | ---------------------- | ---------------------- |
-| (Add screenshots here) | (Add screenshots here) | (Add screenshots here) |
-
----
-
 ## ✨ Packages Used
 
 * [flutter](https://flutter.dev)
