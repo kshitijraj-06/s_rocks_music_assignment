@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371743020890",
+    "project_id": "fir-rocks-7302f",
+    "storage_bucket": "fir-rocks-7302f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371743020890:android:5fe1b84c32e92e5df44563",
+        "android_client_info": {
+          "package_name": "com.zerobee.s_rocks_music"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT3R2g7JmhzfeEhD3LEHwJ57RUMsx0YzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
