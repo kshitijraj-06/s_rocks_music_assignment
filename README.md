@@ -1,64 +1,45 @@
-Here’s a professional `README.md` tailored for your GitHub repo [s\_rocks\_music\_assignment](https://github.com/kshitijraj-06/s_rocks_music_assignment), based on the Flutter app's features, structure, and goals mentioned earlier:
-
----
-
-```markdown
 # 🎵 S-Rocks Music - Flutter Developer Assignment
 
-A Flutter application built as part of the developer assignment for **S-Rocks Music**, showcasing clean architecture, Firebase integration, navigation, and UI best practices.
+A sleek Flutter application created for the **S-Rocks Music** developer assignment. This app demonstrates state management, Firestore integration, and modern UI principles using Flutter.
 
 ---
 
-## 📱 Features
-
-- 🔍 **Search Bar** UI with microphone icon
-- 🧑‍🎤 Header with rotating images (CD, piano, center image)
-- 🧠 **MVVM Architecture** (Model-View-ViewModel)
-- 🔥 **Firebase Firestore Integration** to fetch music service data
-- 📦 **GetX** for State Management and Navigation
-- 🎯 Tappable service cards that navigate to detail screens
-- 🎨 Custom Bottom Navigation Bar with animated indicator
-
----
-
-## 🧪 Screenshots
-
-| Home Screen | Card Tap Action | Bottom Bar |
-|-------------|------------------|------------|
-| ![Home](assets/screens/home.png) | ![Detail](assets/screens/detail.png) | ![BottomBar](assets/screens/bottom_nav.png) |
-
----
-
-## 🏗️ Architecture
-
-This app uses the **MVVM** pattern for scalability and maintainability:
+## 📁 Project Structure
 
 ```
 
 lib/
-├── model/             # Data models
-├── view/              # UI widgets and pages
-├── viewmodel/         # GetX controllers
-├── service/           # Firebase Firestore interactions
-├── utils/             # Shared widgets, bottom nav bar
+├── Models/
+│   └── service\_model.dart         # Data model for services
+├── screens/
+│   ├── home.dart                  # Home screen with service cards
+│   └── card\_detail.dart          # Screen shown on tapping a service
+├── service/
+│   └── home\_service.dart         # Firestore service to fetch data
+├── utils/
+│   ├── bottom\_navigation\_bar.dart # Custom bottom navigation bar
+│   ├── Widget.dart                # Reusable ServiceCard widget
+├── firebase\_options.dart          # Firebase setup file
+└── main.dart                      # App entry point
 
 ````
 
 ---
 
-## 🔧 Tech Stack
+## 🧩 Features
 
-- **Flutter**
-- **Dart**
-- **Firebase Firestore**
-- **GetX**
-- **Google Fonts**
+- 🎯 Clean layout with custom header and search bar
+- 🎨 Animated bottom navigation bar with active semicircle indicator
+- 🗂️ Firebase Firestore data fetching via `home_service.dart`
+- ⚙️ State management using GetX
+- 🔁 Navigation between Home and Detail pages
+- ✅ Tap interactions on each service card
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repo
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/kshitijraj-06/s_rocks_music_assignment.git
@@ -71,9 +52,11 @@ cd s_rocks_music_assignment
 flutter pub get
 ```
 
-### 3. Add Firebase Configuration
+### 3. Firebase Setup
 
-Create a Firebase project and add your `google-services.json` (for Android) and `GoogleService-Info.plist` (for iOS) in respective directories.
+* Add your `google-services.json` in `android/app/`
+* Add your `GoogleService-Info.plist` in `ios/Runner/`
+* Replace `firebase_options.dart` if needed using the [FlutterFire CLI](https://firebase.flutter.dev/docs/cli/)
 
 ### 4. Run the App
 
@@ -83,41 +66,33 @@ flutter run
 
 ---
 
-## 💡 Navigation Logic
+## 📸 Preview
 
-Each service card uses a `GestureDetector` to navigate using `Get.to()` to a new screen displaying:
-
-```
-You tapped on: [Service Name]
-```
+| Home Screen            | Card Navigation        | Bottom Bar             |
+| ---------------------- | ---------------------- | ---------------------- |
+| (Add screenshots here) | (Add screenshots here) | (Add screenshots here) |
 
 ---
 
-## ✨ Upcoming Improvements
+## ✨ Packages Used
 
-* Add animations to card transitions
-* Implement service detail pages with rich content
-* Dark/light theme switcher
-* Better error handling on Firestore fetch
+* [flutter](https://flutter.dev)
+* [get](https://pub.dev/packages/get)
+* [google\_fonts](https://pub.dev/packages/google_fonts)
+* [cloud\_firestore](https://pub.dev/packages/cloud_firestore)
+* [firebase\_core](https://pub.dev/packages/firebase_core)
 
 ---
 
-## 🙌 Credits
+## 🙋 Author
 
-This app was developed as part of the S-Rocks Music Flutter Internship Assignment by:
-
-**Kshitij Raj**
-[GitHub Profile »](https://github.com/kshitijraj-06)
+Developed by **Kshitij Raj**
+📍 [GitHub](https://github.com/kshitijraj-06)
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+Licensed under the MIT License.
 
-```
-
----
-
-Let me know if you'd like to include GIF demos, setup video links, or Firebase setup instructions!
 ```
